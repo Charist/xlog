@@ -1,0 +1,30 @@
+
+package package com.example;
+
+/**
+ * 鏃ュ織绾у埆
+ */
+public enum Level {
+    VERBOSE(6), DEBUG(5), INFO(4), WARN(3), ERROR(2), FATAL(1), NONE(0);
+
+    private int mValue;
+
+    /**
+     * 鏋勯�犳柟娉�
+     * 
+     * @param value
+     */
+    private Level(int value) {
+        this.mValue = value;
+    }
+
+    /**
+     * 鏃ュ織绾у埆瀵瑰簲鐨勬暣鏁板��
+     * 
+     * @return 绾у埆瀵瑰簲鐨勬暣鏁板��
+     */
+    public int getValue() {
+        return mValue;
+    }
+
+}
