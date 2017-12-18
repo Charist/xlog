@@ -57,14 +57,13 @@ bool LogFile::__openlogfile()
             m_logFile = nullptr;
         }
     }
-
     m_logFile = fopen(logPath.c_str(), "ab");
     if (nullptr == m_logFile)
     {
 #ifndef __ANDROID__
         fprintf(stderr, "fopen return NULL, error=%d， %s /n", errno, strerror(errno)); // consoleLog
 #else // !ANDROID  
-    __android_log_print(ANDROID_LOG_ERROR, "fopen return NULL, error=%d， %s ", errno, strerror(errno));
+    __android_log_print(ANDROID_LOG_ERROR, "fopen return NULL", "log name:%s", logPath.c_str());
 #endif
     }
     m_openFileTime = now;
