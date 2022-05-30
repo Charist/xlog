@@ -1,26 +1,30 @@
-# ¼ò½é
-xlog Îª¿çÆ½Ì¨µÄÈÕÖ¾ÏµÍ³¡£¾ßÓĞÁ÷³©ĞÔ ÍêÕûĞÔ Èİ´íĞÔ °²È«ĞÔ¡£½è¼øTencent/mars https://github.com/Tencent/mars µÄÈÕÖ¾Ä£¿éË¼Ïë±àĞ´£¬Ö÷Òª»ùÓÚpoco¿â£¬²¢¾«¼òÁË´úÂë¡£
+# xlog
 
-Ö§³Öwindows, ios, android,linuxÆ½Ì¨¡£mmap»úÖÆ±£Ö¤ÈÕÖ¾Òì³£±ÀÀ£Çé¿öÏÂÊı¾İ²»¶ª¡£¿ÉÀ©Õ¹¼ÓÃÜ¡¢Ñ¹ËõµÈ¹¦ÄÜ¡£ĞÔÄÜ²âÊÔÓÅÓÚpoco ×ÔÉíÈÕÖ¾Ä£¿éºÜ¶à¡£
+## Brief
+xlog ä¸ºè·¨å¹³å°çš„æ—¥å¿—ç³»ç»Ÿã€‚å…·æœ‰æµç•…æ€§ å®Œæ•´æ€§ å®¹é”™æ€§ å®‰å…¨æ€§ã€‚å€Ÿé‰´[Tencent/mars](https://github.com/Tencent/mars) çš„æ—¥å¿—æ¨¡å—æ€æƒ³ç¼–å†™ï¼Œä¸»è¦åŸºäºpocoåº“ï¼Œå¹¶ç²¾ç®€äº†ä»£ç ã€‚
 
 
-----------
-# Getting started
-prepared:  cmake £¬ĞèÔ¤×°cmake.
+## Platforms
+ * Linux
+ * Windows (msvc 2010+, cygwin)
+ * Android
+ * macOS (clang 3.5+)
+
+## Features
+* å¿«é€Ÿã€é«˜æ€§èƒ½
+* å®Œæ•´æ€§ï¼Œmmapæœºåˆ¶ä¿è¯æ—¥å¿—å¼‚å¸¸å´©æºƒæƒ…å†µä¸‹æ•°æ®ä¸ä¸¢
+* åŒæ­¥ã€å¼‚æ­¥ä¸¤ç§æ¨¡å¼
+* å¯æ‰©å±•åŠ å¯†ã€å‹ç¼©ç­‰åŠŸèƒ½
+
+
+## Getting started
+prepared:  cmake tools
 
 windows platform:
-`scripts\create_msvc_sln_2015.bat` »á×Ô¶¯Éú³Évs2015¹¤³Ì¡£¹¤³Ì°üº¬ÁËÈÕÖ¾Ä£¿é¼°¶ÔÓ¦µÄ²âÊÔ³ÌĞò¡£
+`scripts\create_msvc_sln_2015.bat` ä¼šè‡ªåŠ¨ç”Ÿæˆvs2015å·¥ç¨‹ã€‚å·¥ç¨‹åŒ…å«äº†æ—¥å¿—æ¨¡å—åŠå¯¹åº”çš„æµ‹è¯•ç¨‹åºã€‚
 
 Android platform:
-
 `cd Android/jin`
-`ndk-build`  »á×Ô¶¯ÔÚ²âÊÔdemo¹¤³ÌÏÂÉú³Élibxlog.so¿â¡£
+`ndk-build` ä¼šè‡ªåŠ¨åœ¨æµ‹è¯•demoå·¥ç¨‹ä¸‹ç”Ÿæˆlibxlog.soåº“ã€‚
 
-Andorid/xlog Îª²âÊÔdemo¡£
-
-
-
-
-
- 
-
+Andorid/xlog ä¸ºæµ‹è¯•demoã€‚
